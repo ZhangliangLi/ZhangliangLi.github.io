@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhangliang (Leon) Li - Portfolio</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js via CDN -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background-color: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold">LEON</a>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <a href="#about" class="hover:text-gray-600">About</a>
+                    <a href="#experience" class="hover:text-gray-600">Experience</a>
+                    <a href="#education" class="hover:text-gray-600">Education</a>
+                    <a href="#publications" class="hover:text-gray-600">Publications</a>
+                    <a href="#contact" class="hover:text-gray-600">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6">Zhangliang (Leon) Li</h1>
+                <p class="text-xl text-gray-600 mb-8">Project Engineer & Mechanical Engineer</p>
+                <div class="flex justify-center space-x-4">
+                    <a href="https://www.linkedin.com/in/zhangliang-leon-li/" target="_blank" class="text-gray-600 hover:text-gray-900">
+                        <i class="fab fa-linkedin text-2xl"></i>
+                    </a>
+                    <a href="mailto:leon997116@gmail.com" class="text-gray-600 hover:text-gray-900">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </a>
+                </div>
+                <p class="mt-4 text-gray-600">Springfield, MA | 1-314-556-7992</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <p class="text-gray-600 leading-relaxed">
+                        I'm a Project Engineer specializing in Configuration Management at CRRC MA Corporation. With a strong background in mechanical engineering and project management, I've successfully led teams to drive project progress, resolve technical issues, and implement efficient configuration management processes for the US market.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-drafting-compass text-gray-400"></i>
+                            <span>SolidWorks, AutoCAD</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-code text-gray-400"></i>
+                            <span>MATLAB, C++, Java</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-cogs text-gray-400"></i>
+                            <span>ANSYS, Simulink</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-tasks text-gray-400"></i>
+                            <span>SAP, MS Project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Professional Experience</h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 timeline-item">
+                    <h3 class="text-xl font-bold">Project Engineer – Configuration Management</h3>
+                    <p class="text-gray-600">CRRC MA CORPORATION | LA Metro HR4000 Project</p>
+                    <p class="text-gray-500 mb-4">May 2023 - Present | Springfield, MA</p>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Led teams to drive project progress, resolving over 1200 project issues and saving nearly $1 million</li>
+                        <li>Established and managed the Configuration Control Board (CCB)</li>
+                        <li>Developed engineering design configuration management platform and tools</li>
+                        <li>Implemented configuration management processes for the US market</li>
+                        <li>Utilized SAP system to enhance production efficiency</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Education</h2>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold">Washington University in St Louis</h3>
+                    <p class="text-gray-600">Master of Science in Mechanical Engineering</p>
+                    <p class="text-gray-500">Sep 2021 - May 2023 | GPA: 4.0/4.0</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-bold">Wuhan University of Technology</h3>
+                    <p class="text-gray-600">Bachelor of Science in Mechanical Engineering</p>
+                    <p class="text-gray-500">Sep 2021 - Jun 2023 | GPA: 3.7/4.0</p>
+                    <p class="text-gray-600 mt-2">Honors: Second-class Scholarship, Triple-A Student (2019-2020)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-8">Publications & Patents</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Publications</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600">The Effects of Whether Wearing the Mask in the Spreading Process of COVID-19</p>
+                            <p class="text-gray-500">International Core Journal of Engineering</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600">Multi-objective Optimization of Capacitor Bank Considering the Parasitic Parameters of Capacitors</p>
+                            <p class="text-gray-500">8th Renewable Power Generation Conference (RPG 2019)</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Patents</h3>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600">The Revolute Joints of Industrial Robots</p>
+                            <p class="text-gray-500">Patent No.: 202020837572.6</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600">A Balanced Training Platform that Combines Testing and Active-Passive Training</p>
+                            <p class="text-gray-500">Patent No.: 201921748204.8</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm">
+                            <p class="text-gray-600">Movement Detection of Patients During Weight Loss Training</p>
+                            <p class="text-gray-500">Patent No.: 201921748053.6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch</h2>
+            <p class="text-gray-600 mb-8">
+                I'm always open to new opportunities and interesting projects.
+                Feel free to reach out!
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:leon997116@gmail.com" 
+                   class="inline-block bg-gray-900 text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/zhangliang-leon-li/" 
+                   class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                   target="_blank">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-800 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>Languages: English (Fluency), Chinese (Native)</p>
+            <p class="mt-2">&copy; 2024 Zhangliang (Leon) Li. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
